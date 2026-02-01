@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>SHR Robotics | Physical AI-Powered Humanoid Robotic Hands | Join Our Mission</title>
+    <meta name="description" content="Pioneer the future of industrial automation. SHR Robotics develops next-gen humanoid hands with Physical AI. Backed by SCHUNK's 80-year legacy. Now hiring robotics engineers, AI researchers & founders globally.">
+    <meta name="keywords" content="physical ai robotics, humanoid robot hand, industrial robotics startup, anthropomorphic gripper, robotic manipulation AI, dexterous hand engineering, humanoid robotics Germany, robotics jobs Munich, sim-to-real robotics">
+    <meta name="author" content="SHR Robotics">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SHR Robotics | Shaping the Future with Physical AI">
+    <meta property="og:description" content="Building the next generation of humanoid robotic hands. Backed by SCHUNK. Now hiring globally.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shr-robotics.eu">
+    <meta property="og:image" content="assets/hero.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SHR Robotics | Physical AI-Powered Humanoid Hands">
+    <meta property="twitter:description" content="Building the next generation of humanoid robotic hands. Now hiring globally.">
+    <meta property="twitter:image" content="assets/hero.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/hand.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SHR Robotics",
+        "url": "https://www.shr-robotics.eu",
+        "logo": "assets/hand.svg",
+        "description": "Building the next generation of humanoid robotic hands powered by Physical AI",
+        "foundingDate": "2024",
+        "parentOrganization": {
+            "@type": "Organization",
+            "name": "SCHUNK SE & Co. KG",
+            "url": "https://schunk.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Munich",
+            "addressCountry": "DE"
+        }
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-primary: #0066FF;
+            --color-primary-dark: #0052CC;
+            --color-primary-light: #3385FF;
+            --color-secondary: #00D4AA;
+            --color-secondary-dark: #00B392;
+            --color-accent: #FF6B35;
+            --color-dark: #0A0F1C;
+            --color-dark-secondary: #111827;
+            --color-dark-tertiary: #1F2937;
+            --color-gray-900: #1A202C;
+            --color-gray-800: #2D3748;
+            --color-gray-700: #4A5568;
+            --color-gray-600: #718096;
+            --color-gray-500: #A0AEC0;
+            --color-gray-400: #CBD5E0;
+            --color-gray-300: #E2E8F0;
+            --color-white: #FFFFFF;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4AA 100%);
+            --gradient-dark: linear-gradient(180deg, #0A0F1C 0%, #111827 100%);
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --section-padding: 120px;
+            --container-max: 1200px;
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --border-radius-xl: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-glow: 0 4px 30px rgba(0, 102, 255, 0.4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body.nav-open {
+            overflow: hidden;
+        }
+        img { max-width: 100%; height: auto; }
+        a { color: inherit; text-decoration: none; }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .nav--scrolled {
+            background: rgba(10, 15, 28, 0.95);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 16px 0;
+        }
+        .nav__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .nav__logo-icon {
+            width: 40px;
+            height: 40px;
+        }
+        .nav__logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .nav__menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .nav__links {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+        .nav__link {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color-gray-400);
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .nav__link:hover { color: var(--color-white); }
+        .nav__cta {
+            padding: 12px 24px;
+            background: var(--gradient-primary);
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 14px;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .nav__cta:hover {
+            -webkit-transform: translateY(-2px);
+            -moz-transform: translateY(-2px);
+            transform: translateY(-2px);
+            -webkit-box-shadow: var(--shadow-glow);
+            -moz-box-shadow: var(--shadow-glow);
+            box-shadow: var(--shadow-glow);
+        }
+        .nav__menu-button {
+            display: none;
+        }
+        
+        @media (max-width: 1024px) {
+            .nav__menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: var(--color-dark);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                -webkit-transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+                -moz-transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+                transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+            }
+            body.nav-open .nav__menu {
+                right: 0;
+            }
+            .nav__links {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .nav__link {
+                font-size: 24px;
+            }
+            .nav__cta {
+                font-size: 18px;
+            }
+            .nav__menu-button {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                z-index: 1001;
+                background: none;
+                border: none;
+            }
+            .nav__menu-button span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: var(--color-white);
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+            body.nav-open .nav__menu-button span:nth-child(1) {
+                -webkit-transform: rotate(45deg) translate(5px, 5px);
+                -moz-transform: rotate(45deg) translate(5px, 5px);
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            body.nav-open .nav__menu-button span:nth-child(2) {
+                opacity: 0;
+            }
+            body.nav-open .nav__menu-button span:nth-child(3) {
+                -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+                -moz-transform: rotate(-45deg) translate(-5px, 5px);
+                transform: rotate(-45deg) translate(-5px, 5px);
+            }
+        }
+
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+        .btn--primary {
+            background: var(--gradient-primary);
+            color: var(--color-white);
+            -webkit-box-shadow: var(--shadow-glow);
+            -moz-box-shadow: var(--shadow-glow);
+            box-shadow: var(--shadow-glow);
+        }
+        .btn--primary:hover {
+            -webkit-transform: translateY(-3px);
+            -moz-transform: translateY(-3px);
+            transform: translateY(-3px);
+            -webkit-box-shadow: 0 8px 40px rgba(0, 102, 255, 0.5);
+            -moz-box-shadow: 0 8px 40px rgba(0, 102, 255, 0.5);
+            box-shadow: 0 8px 40px rgba(0, 102, 255, 0.5);
+        }
+        .btn--secondary {
+            background: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-gray-600);
+        }
+        .btn--secondary:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+        .btn--white {
+            background: var(--color-white);
+            color: var(--color-dark);
+        }
+        .btn--white:hover {
+            -webkit-transform: translateY(-3px);
+            -moz-transform: translateY(-3px);
+            transform: translateY(-3px);
+            -webkit-box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+            -moz-box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+        }
+        .btn--large { padding: 20px 40px; font-size: 17px; }
+        .btn__icon { width: 20px; height: 20px; }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 100px;
+        }
+        .hero__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+        .hero__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+        .hero__bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(10, 15, 28, 0.95) 0%, rgba(10, 15, 28, 0.7) 50%, rgba(10, 15, 28, 0.9) 100%);
+        }
+        .hero__content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .hero__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background: rgba(0, 102, 255, 0.1);
+            border: 1px solid rgba(0, 102, 255, 0.3);
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-primary-light);
+            margin-bottom: 28px;
+        }
+        .hero__badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--color-secondary);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-animation: pulse 2s infinite;
+            -moz-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+        }
+        @-webkit-keyframes pulse {
+            0%, 100% { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
+            50% { opacity: 0.5; -webkit-transform: scale(0.8); transform: scale(0.8); }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); }
+            50% { opacity: 0.5; -webkit-transform: scale(0.8); -moz-transform: scale(0.8); transform: scale(0.8); }
+        }
+        .hero__title {
+            font-size: clamp(42px, 6vw, 76px);
+            font-weight: 800;
+            line-height: 1.05;
+            margin-bottom: 28px;
+            letter-spacing: -0.03em;
+        }
+        .hero__subtitle {
+            font-size: clamp(18px, 2.5vw, 22px);
+            color: var(--color-gray-400);
+            margin-bottom: 44px;
+            max-width: 580px;
+            line-height: 1.7;
+        }
+        .hero__cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 72px;
+        }
+        .hero__stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding-top: 48px;
+            border-top: 1px solid var(--color-gray-800);
+        }
+        .hero__stat-value {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+        .hero__stat-value span { color: var(--color-secondary); }
+        .hero__stat-label {
+            font-size: 13px;
+            color: var(--color-gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+            .hero__content {
+                max-width: 100%;
+            }
+            .hero__subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero__cta-group {
+                justify-content: center;
+            }
+            .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+            .hero__stat-value { font-size: 32px; }
+        }
+        @media (max-width: 480px) {
+            .hero__title {
+                font-size: 36px;
+            }
+            .hero__subtitle {
+                font-size: 16px;
+            }
+            .btn--large {
+                padding: 16px 24px;
+                font-size: 15px;
+            }
+            .hero__stats {
+                gap: 20px;
+            }
+            .hero__stat-value {
+                font-size: 28px;
+            }
+        }
+
+        /* Sections */
+        .section {
+            padding: var(--section-padding) 0;
+            position: relative;
+        }
+        .section--dark { background: var(--color-dark); }
+        .section--darker { background: var(--color-dark-secondary); }
+        .section__header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .section__label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 16px;
+        }
+        .section__title {
+            font-size: clamp(32px, 4.5vw, 52px);
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+        .section__subtitle {
+            font-size: 18px;
+            color: var(--color-gray-500);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .section { padding: 80px 0; }
+            .section__header { margin-bottom: 60px; }
+            .section__title {
+                font-size: 28px;
+            }
+            .section__subtitle {
+                font-size: 16px;
+            }
+        }
+
+        /* Vision Section */
+        .vision__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .vision__card {
+            padding: 48px 32px;
+            background: var(--color-dark);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-800);
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .vision__card:hover {
+            border-color: var(--color-primary);
+            -webkit-transform: translateY(-8px);
+            -moz-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+        .vision__card-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 24px;
+        }
+        .vision__card-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+        }
+        .vision__card-number {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 24px;
+        }
+        .vision__card-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        @media (max-width: 992px) {
+            .vision__grid { grid-template-columns: 1fr; }
+        }
+
+        /* Physical AI Section */
+        .physical-ai__intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 100px;
+            align-items: center;
+        }
+        .physical-ai__video {
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        .physical-ai__video video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .physical-ai__text h3 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .physical-ai__text h3 span { color: var(--color-accent); }
+        .physical-ai__text p {
+            color: var(--color-gray-500);
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+        .physical-ai__highlight {
+            padding: 28px;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.08) 0%, rgba(0, 212, 170, 0.05) 100%);
+            border-left: 3px solid var(--color-primary);
+            -webkit-border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            -moz-border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        .physical-ai__highlight p {
+            color: var(--color-gray-300);
+            font-style: italic;
+            margin: 0;
+        }
+        @media (max-width: 992px) {
+            .physical-ai__intro { grid-template-columns: 1fr; gap: 48px; }
+        }
+
+        /* Pillars */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-bottom: 100px;
+        }
+        .pillar {
+            padding: 44px;
+            background: var(--color-dark);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-800);
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .pillar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .pillar:hover {
+            border-color: transparent;
+            -webkit-transform: translateY(-6px);
+            -moz-transform: translateY(-6px);
+            transform: translateY(-6px);
+            -webkit-box-shadow: 0 20px 60px rgba(0, 102, 255, 0.15);
+            -moz-box-shadow: 0 20px 60px rgba(0, 102, 255, 0.15);
+            box-shadow: 0 20px 60px rgba(0, 102, 255, 0.15);
+        }
+        .pillar:hover::before { opacity: 1; }
+        .pillar__icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.15) 0%, rgba(0, 212, 170, 0.1) 100%);
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+            margin-bottom: 28px;
+            font-size: 28px;
+        }
+        .pillar__title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .pillar__text {
+            color: var(--color-gray-500);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        @media (max-width: 992px) {
+            .pillars { grid-template-columns: 1fr; }
+        }
+
+        /* Tech Specs */
+        .tech-specs {
+            background: var(--color-dark);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            padding: 56px;
+            border: 1px solid var(--color-gray-800);
+        }
+        .tech-specs__title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .tech-specs__title::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: var(--gradient-primary);
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+        }
+        .tech-specs__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .tech-spec {
+            padding: 24px;
+            background: var(--color-dark-secondary);
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+        }
+        .tech-spec__label {
+            font-size: 11px;
+            color: var(--color-gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+        .tech-spec__value {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color-gray-300);
+        }
+        @media (max-width: 768px) {
+            .tech-specs {
+                padding: 32px;
+            }
+        }
+
+        /* Quote */
+        .physical-ai__quote {
+            margin-top: 100px;
+            text-align: center;
+            padding: 72px 48px;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.08) 0%, rgba(0, 212, 170, 0.05) 100%);
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            position: relative;
+        }
+        .physical-ai__quote::before {
+            content: '"';
+            position: absolute;
+            top: 24px;
+            left: 48px;
+            font-size: 140px;
+            font-family: Georgia, serif;
+            color: var(--color-primary);
+            opacity: 0.15;
+            line-height: 1;
+        }
+        .physical-ai__quote p {
+            font-size: 22px;
+            line-height: 1.8;
+            color: var(--color-gray-300);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .physical-ai__quote {
+                padding: 48px 24px;
+            }
+            .physical-ai__quote p {
+                font-size: 18px;
+            }
+        }
+
+        /* Why Us Section */
+        .why-us__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .why-us__card {
+            padding: 40px;
+            background: linear-gradient(135deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-800);
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .why-us__card:hover {
+            border-color: var(--color-secondary);
+            -webkit-transform: translateY(-4px);
+            -moz-transform: translateY(-4px);
+            transform: translateY(-4px);
+        }
+        .why-us__card-icon { font-size: 40px; margin-bottom: 24px; }
+        .why-us__card-title { font-size: 19px; font-weight: 700; margin-bottom: 12px; }
+        .why-us__card-text { font-size: 15px; color: var(--color-gray-500); line-height: 1.7; }
+        @media (max-width: 768px) {
+            .why-us__grid { grid-template-columns: 1fr; }
+        }
+
+        /* Tech Stack Section */
+        .tech-stack__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-bottom: 60px;
+        }
+        .hand-card {
+            background: var(--color-dark);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-800);
+            overflow: hidden;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .hand-card:hover {
+            border-color: var(--color-primary);
+            -webkit-transform: translateY(-6px);
+            -moz-transform: translateY(-6px);
+            transform: translateY(-6px);
+        }
+        .hand-card__image {
+            height: 250px;
+            background: linear-gradient(135deg, var(--color-dark-tertiary) 0%, var(--color-dark-secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .hand-card__image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .hand-card__content { padding: 32px; }
+        .hand-card__badge {
+            display: inline-block;
+            padding: 6px 14px;
+            background: rgba(0, 212, 170, 0.1);
+            color: var(--color-secondary);
+            font-size: 12px;
+            font-weight: 600;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+        }
+        .hand-card__title { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .hand-card__subtitle { font-size: 14px; color: var(--color-gray-600); margin-bottom: 20px; }
+        .hand-card__specs { list-style: none; }
+        .hand-card__spec {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--color-gray-800);
+            font-size: 14px;
+        }
+        .hand-card__spec:last-child { border-bottom: none; }
+        .hand-card__spec-label { color: var(--color-gray-600); }
+        .hand-card__spec-value { color: var(--color-gray-300); font-weight: 500; }
+        @media (max-width: 992px) {
+            .tech-stack__grid { grid-template-columns: 1fr; }
+        }
+        /* Anthropomorphic Hand Banner */
+        .antro-banner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding: 60px;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(0, 212, 170, 0.05) 100%);
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            border: 1px solid var(--color-gray-800);
+            margin-top: 60px;
+        }
+        .antro-banner__image img {
+            width: 100%;
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+        }
+        .antro-banner__content h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .antro-banner__content p {
+            color: var(--color-gray-500);
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            .tech-stack__grid { grid-template-columns: 1fr; }
+            .antro-banner { grid-template-columns: 1fr; padding: 40px; }
+        }
+
+        /* Simulation Banner */
+        .simulation-banner {
+            padding: 48px;
+            background: var(--color-dark);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-800);
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            margin-top: 40px;
+        }
+        .simulation-banner__content { flex: 1; }
+        .simulation-banner__title { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+        .simulation-banner__text { color: var(--color-gray-500); margin-bottom: 20px; }
+        .simulation-banner__logos { display: flex; gap: 24px; }
+        .simulation-banner__logo {
+            padding: 12px 24px;
+            background: var(--color-dark-secondary);
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-gray-400);
+        }
+        @media (max-width: 768px) {
+            .simulation-banner { flex-direction: column; text-align: center; }
+        }
+
+        /* Robotic Gyms Section */
+        .gyms__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .gyms__text h3 { font-size: 40px; font-weight: 800; margin-bottom: 20px; }
+        .gyms__text h3 span { color: var(--color-secondary); }
+        .gyms__text p { font-size: 17px; color: var(--color-gray-500); line-height: 1.8; margin-bottom: 32px; }
+        .gyms__features { list-style: none; }
+        .gyms__feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .gyms__feature-icon {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-primary);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+        .gyms__feature-text { color: var(--color-gray-400); font-size: 15px; }
+        .gyms__image {
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .gyms__image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (max-width: 992px) {
+            .gyms__content { grid-template-columns: 1fr; gap: 48px; }
+        }
+
+        /* Recruiting Section */
+        .recruiting__intro {
+            max-width: 720px;
+            margin: 0 auto 100px;
+            text-align: center;
+        }
+        .recruiting__intro p {
+            font-size: 19px;
+            color: var(--color-gray-500);
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+        .recruiting__intro p:first-of-type { color: var(--color-gray-300); font-size: 21px; }
+        .recruiting__intro p strong { color: var(--color-white); }
+
+        .why-shr {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 120px;
+        }
+        .why-shr-card {
+            padding: 36px;
+            background: linear-gradient(180deg, var(--color-dark-secondary) 0%, var(--color-dark) 100%);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-800);
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .why-shr-card:hover { border-color: var(--color-secondary); -webkit-transform: translateY(-4px); -moz-transform: translateY(-4px); transform: translateY(-4px); }
+        .why-shr-card__icon { font-size: 36px; margin-bottom: 24px; }
+        .why-shr-card__title { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+        .why-shr-card__text { font-size: 14px; color: var(--color-gray-500); line-height: 1.7; }
+        @media (max-width: 1024px) { .why-shr { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) { .why-shr { grid-template-columns: 1fr; } }
+
+        /* Roles */
+        .roles__header { text-align: center; margin-bottom: 60px; }
+        .roles__header h3 { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+        .roles__header p { color: var(--color-gray-500); font-size: 17px; }
+        .roles__categories { display: flex; flex-direction: column; gap: 40px; margin-bottom: 100px; }
+        .role-category {
+            background: var(--color-dark-secondary);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--color-gray-800);
+        }
+        .role-category__header {
+            padding: 28px 36px;
+            background: var(--color-dark-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .role-category__icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-primary);
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+            font-size: 22px;
+        }
+        .role-category__title { font-size: 19px; font-weight: 700; }
+        .roles-list { padding: 16px; }
+        .role {
+            padding: 28px;
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+            margin-bottom: 8px;
+        }
+        .role:last-child { margin-bottom: 0; }
+        .role:hover { background: var(--color-dark); border-color: var(--color-gray-800); }
+        .role__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .role__title { font-size: 18px; font-weight: 700; }
+        .role__tags { display: flex; gap: 8px; flex-wrap: wrap; }
+        .role__tag {
+            padding: 5px 14px;
+            font-size: 12px;
+            font-weight: 500;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            background: var(--color-gray-800);
+            color: var(--color-gray-500);
+        }
+        .role__tag--remote { background: rgba(0, 212, 170, 0.1); color: var(--color-secondary); }
+        .role__impact { font-size: 15px; color: var(--color-gray-500); font-style: italic; margin-bottom: 18px; line-height: 1.6; }
+        .role__requirements { display: flex; flex-wrap: wrap; gap: 20px; }
+        .role__req {
+            font-size: 13px;
+            color: var(--color-gray-600);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .role__req::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--color-primary);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        /* Offers */
+        .recruiting__offers {
+            padding: 56px;
+            background: var(--color-dark-secondary);
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            border: 1px solid var(--color-gray-800);
+            margin-bottom: 80px;
+        }
+        .recruiting__offers h3 { font-size: 28px; font-weight: 800; margin-bottom: 40px; text-align: center; }
+        .offers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .offer { display: flex; align-items: flex-start; gap: 16px; }
+        .offer__icon { font-size: 28px; flex-shrink: 0; }
+        .offer__text { font-size: 14px; color: var(--color-gray-500); line-height: 1.6; }
+        .offer__text strong { display: block; color: var(--color-white); font-size: 16px; margin-bottom: 4px; }
+        @media (max-width: 992px) { .offers-grid { grid-template-columns: 1fr; } }
+
+        /* Culture */
+        .recruiting__culture {
+            text-align: center;
+            padding: 72px 48px;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, rgba(0, 102, 255, 0.08) 100%);
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            margin-bottom: 80px;
+        }
+        .recruiting__culture p { font-size: 19px; line-height: 1.9; color: var(--color-gray-300); max-width: 700px; margin: 0 auto; }
+        .recruiting__culture strong { color: var(--color-white); }
+        
+        @media (max-width: 768px) {
+            .recruiting__culture {
+                padding: 48px 24px;
+            }
+            .recruiting__culture p {
+                font-size: 16px;
+            }
+        }
+
+        /* Team Image */
+        .recruiting__team {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        .recruiting__team-image {
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            display: inline-block;
+            -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .recruiting__team-image img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+        }
+        .recruiting__team-caption {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--color-gray-600);
+        }
+
+        /* FAQ */
+        .faq { margin-bottom: 100px; }
+        .faq__title { font-size: 28px; font-weight: 800; text-align: center; margin-bottom: 48px; }
+        .faq__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .faq__item {
+            padding: 32px;
+            background: var(--color-dark-secondary);
+            -webkit-border-radius: var(--border-radius-lg);
+            -moz-border-radius: var(--border-radius-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-800);
+        }
+        .faq__question { font-size: 17px; font-weight: 700; margin-bottom: 14px; }
+        .faq__answer { font-size: 15px; color: var(--color-gray-500); line-height: 1.7; }
+        @media (max-width: 768px) { .faq__grid { grid-template-columns: 1fr; } }
+
+        /* CTA */
+        .recruiting__cta {
+            text-align: center;
+            padding: 100px 48px;
+            background: var(--gradient-primary);
+            -webkit-border-radius: var(--border-radius-xl);
+            -moz-border-radius: var(--border-radius-xl);
+            border-radius: var(--border-radius-xl);
+            position: relative;
+            overflow: hidden;
+        }
+        .recruiting__cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        .recruiting__cta-content { position: relative; z-index: 1; }
+        .recruiting__cta h3 { font-size: 44px; font-weight: 800; margin-bottom: 20px; }
+        .recruiting__cta p {
+            font-size: 19px;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+        .recruiting__cta .btn--white { padding: 20px 48px; font-size: 17px; }
+        .recruiting__cta-email { margin-top: 24px; font-size: 15px; opacity: 0.8; }
+        .recruiting__cta-email a { color: var(--color-white); text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .recruiting__cta {
+                padding: 60px 24px;
+            }
+            .recruiting__cta h3 {
+                font-size: 32px;
+            }
+            .recruiting__cta p {
+                font-size: 16px;
+            }
+        }
+
+        /* Contact Section */
+        .contact__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .contact__text h3 { font-size: 40px; font-weight: 800; margin-bottom: 20px; }
+        .contact__text p { font-size: 17px; color: var(--color-gray-500); margin-bottom: 32px; line-height: 1.8; }
+        .contact__info { list-style: none; }
+        .contact__info-item { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; color: var(--color-gray-400); }
+        .contact__info-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-dark);
+            border-radius: var(--border-radius);
+            font-size: 20px;
+        }
+        .contact__form {
+            padding: 48px;
+            background: var(--color-dark);
+            border-radius: var(--border-radius-xl);
+            border: 1px solid var(--color-gray-800);
+        }
+        .contact__form-group { margin-bottom: 24px; }
+        .contact__form-label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 10px; color: var(--color-gray-400); }
+        .contact__form-input,
+        .contact__form-textarea {
+            width: 100%;
+            padding: 16px;
+            background: var(--color-dark-secondary);
+            border: 1px solid var(--color-gray-800);
+            -webkit-border-radius: var(--border-radius);
+            -moz-border-radius: var(--border-radius);
+            border-radius: var(--border-radius);
+            color: var(--color-white);
+            font-family: inherit;
+            font-size: 15px;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            transition: var(--transition);
+        }
+        .contact__form-input:focus,
+        .contact__form-textarea:focus { outline: none; border-color: var(--color-primary); }
+        .contact__form-textarea { min-height: 140px; resize: vertical; }
+        @media (max-width: 992px) { .contact__content { grid-template-columns: 1fr; gap: 48px; } }
+
+        /* Footer */
+        .footer {
+            padding: 80px 0 40px;
+            background: var(--color-dark);
+            border-top: 1px solid var(--color-gray-800);
+        }
+        .footer__top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        .footer__brand p { color: var(--color-gray-600); font-size: 14px; line-height: 1.7; margin-top: 20px; }
+        .footer__column h4 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+            color: var(--color-gray-400);
+        }
+        .footer__links { list-style: none; }
+        .footer__link { margin-bottom: 14px; }
+        .footer__link a { color: var(--color-gray-600); font-size: 14px; -webkit-transition: var(--transition); -moz-transition: var(--transition); transition: var(--transition); }
+        .footer__link a:hover { color: var(--color-white); }
+        .footer__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--color-gray-800);
+        }
+        .footer__copyright { font-size: 14px; color: var(--color-gray-600); }
+        .footer__legal { display: flex; gap: 32px; }
+        .footer__legal a { color: var(--color-gray-600); font-size: 14px; -webkit-transition: var(--transition); -moz-transition: var(--transition); transition: var(--transition); }
+        .footer__legal a:hover { color: var(--color-white); }
+        .footer__backed { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--color-gray-600); }
+        .footer__backed img { height: 24px; }
+        .footer__backed a { color: var(--color-primary); font-weight: 600; }
+        
+        @media (max-width: 992px) {
+            .footer__top { grid-template-columns: 1fr 1fr; }
+            .footer__brand { grid-column: span 2; }
+        }
+        @media (max-width: 768px) {
+            .footer__bottom { flex-direction: column; gap: 24px; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            .footer__top {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer__brand {
+                grid-column: span 1;
+            }
+        }
+        
+        /* Larger screens */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1380px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+    <div class="container">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">
+                <div class="nav__logo-icon">
+                    <img src="assets/hand.svg" alt="SHR Robotics">
+                </div>
+                <span>SHR Robotics</span>
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__links">
+                    <li><a href="#vision" class="nav__link">Vision</a></li>
+                    <li><a href="#physical-ai" class="nav__link">Physical AI</a></li>
+                    <li><a href="#tech-stack" class="nav__link">Tech-Stack</a></li>
+                    <li><a href="#gyms" class="nav__link">Robotic Gyms</a></li>
+                    <li><a href="#careers" class="nav__link">Careers</a></li>
+                </ul>
+                <a href="#contact" class="nav__cta">Get in Touch</a>
+            </div>
+            <button class="nav__menu-button" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero__bg">
+        <img src="assets/hero.png" alt="Humanoid Robotic Hand">
+    </div>
+    <div class="container">
+        <div class="hero__content">
+            <div class="hero__badge">Now Hiring Globally</div>
+            <h1 class="hero__title">
+                Shaping the Future of Industrial Automation with <span class="text-gradient">Physical AI</span>
+            </h1>
+            <p class="hero__subtitle">
+                We're building the next generation of humanoid robotic hands – powered by Physical AI – to transform productivity across every industry.
+            </p>
+            <div class="hero__cta-group">
+                <a href="#careers" class="btn btn--primary btn--large">
+                    Join Our Founding Team
+                    <svg class="btn__icon" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#physical-ai" class="btn btn--secondary btn--large">Explore Our Technology</a>
+            </div>
+            <div class="hero__stats">
+                <div class="hero__stat">
+                    <div class="hero__stat-value">15<span>+</span></div>
+                    <div class="hero__stat-label">Robotic Gyms</div>
+                </div>
+                <div class="hero__stat">
+                    <div class="hero__stat-value">80<span>yrs</span></div>
+                    <div class="hero__stat-label">SCHUNK Heritage</div>
+                </div>
+                <div class="hero__stat">
+                    <div class="hero__stat-value">20<span>DOF</span></div>
+                    <div class="hero__stat-label">Dexterous Manipulation</div>
+                </div>
+                <div class="hero__stat">
+                    <div class="hero__stat-value">3<span>+</span></div>
+                    <div class="hero__stat-label">Hand Platforms</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision Section -->
+<section class="section section--darker" id="vision">
+    <div class="container">
+        <header class="section__header">
+            <span class="section__label">Our Vision</span>
+            <h2 class="section__title">Building the Future of Humanoid Manipulation</h2>
+            <p class="section__subtitle">Three core pillars drive everything we do</p>
+        </header>
+        <div class="vision__grid">
+            <article class="vision__card">
+                <div class="vision__card-icon">
+                    <img src="assets/hand.svg" alt="Hand Icon">
+                </div>
+                <div class="vision__card-number">01</div>
+                <h3 class="vision__card-title">Build the world's leading humanoid hand</h3>
+            </article>
+            <article class="vision__card">
+                <div class="vision__card-icon">
+                    <img src="assets/standard.svg" alt="Standard Icon">
+                </div>
+                <div class="vision__card-number">02</div>
+                <h3 class="vision__card-title">Set the global standard for industrial-grade humanoid manipulation</h3>
+            </article>
+            <article class="vision__card">
+                <div class="vision__card-icon">
+                    <img src="assets/globe.svg" alt="Globe Icon">
+                </div>
+                <div class="vision__card-number">03</div>
+                <h3 class="vision__card-title">Make humanoid robots a real productivity driver in global industry</h3>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Physical AI Section -->
+<section class="section section--dark" id="physical-ai">
+    <div class="container">
+        <header class="section__header">
+            <span class="section__label">Core Technology</span>
+            <h2 class="section__title">Powered by Physical AI</h2>
+            <p class="section__subtitle">From simulation to reality – our hands don't just move, they learn.</p>
+        </header>
+
+        <div class="physical-ai__intro">
+            <div class="physical-ai__video">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="physical-ai__text">
+                <h3>Our Approach: <span>Physical Intelligence</span></h3>
+                <p>
+                    SHR hands are different. Using Physical AI – the convergence of embodied learning, real-time simulation, and adaptive control – our systems develop intuitive manipulation skills that transfer from virtual training to real-world execution.
+                </p>
+                <p>
+                    This means hands that adapt, generalize, and improve with every interaction.
+                </p>
+                <div class="physical-ai__highlight">
+                    <p>"Physical AI isn't a feature – it's the foundation of everything we build."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pillars">
+            <article class="pillar">
+                <div class="pillar__icon">🔄</div>
+                <h3 class="pillar__title">Sim-to-Real Transfer</h3>
+                <p class="pillar__text">
+                    We train in NVIDIA Omniverse and MuJoCo – millions of grasp variations, edge cases, and failure modes – before a single physical test.
+                </p>
+            </article>
+            <article class="pillar">
+                <div class="pillar__icon">🏋️</div>
+                <h3 class="pillar__title">Continuous Learning in Robotic Gyms</h3>
+                <p class="pillar__text">
+                    Our 15 global Robotic Gyms aren't showrooms – they're training grounds. Every interaction generates data. Every deployment improves the model.
+                </p>
+            </article>
+            <article class="pillar">
+                <div class="pillar__icon">🧠</div>
+                <h3 class="pillar__title">Generalization, Not Programming</h3>
+                <p class="pillar__text">
+                    Traditional automation requires reprogramming for every new task. Our hands generalize: train once on manipulation primitives, deploy across industries.
+                </p>
+            </article>
+        </div>
+
+        <div class="tech-specs">
+            <h3 class="tech-specs__title">Technical Capabilities</h3>
+            <div class="tech-specs__grid">
+                <div class="tech-spec">
+                    <div class="tech-spec__label">Degrees of Freedom</div>
+                    <div class="tech-spec__value">Up to 20 DOF for human-like dexterity</div>
+                </div>
+                <div class="tech-spec">
+                    <div class="tech-spec__label">Tactile Feedback</div>
+                    <div class="tech-spec__value">Integrated sensing for force-adaptive grasping</div>
+                </div>
+                <div class="tech-spec">
+                    <div class="tech-spec__label">Training Infrastructure</div>
+                    <div class="tech-spec__value">15 Robotic Gyms generating real-world data</div>
+                </div>
+                <div class="tech-spec">
+                    <div class="tech-spec__label">Simulation Stack</div>
+                    <div class="tech-spec__value">NVIDIA Omniverse + MuJoCo integration</div>
+                </div>
+                <div class="tech-spec">
+                    <div class="tech-spec__label">Deployment Speed</div>
+                    <div class="tech-spec__value">From sim-trained model to production in weeks</div>
+                </div>
+            </div>
+        </div>
+
+        <blockquote class="physical-ai__quote">
+            <p>
+                Physical AI isn't a feature – it's the foundation. Every hand we build, every algorithm we train, every deployment we execute moves us closer to a world where humanoid robots aren't tools, but intelligent collaborators in every industry.
+            </p>
+        </blockquote>
+    </div>
+</section>
+
+<!-- Why Us Section -->
+<section class="section section--darker" id="why-us">
+    <div class="container">
+        <header class="section__header">
+            <span class="section__label">Why SHR</span>
+            <h2 class="section__title">What Makes Us Different</h2>
+            <p class="section__subtitle">Built on proven technology, trusted heritage, and real infrastructure</p>
+        </header>
+        <div class="why-us__grid">
+            <article class="why-us__card">
+                <div class="why-us__card-icon">🚀</div>
+                <h3 class="why-us__card-title">From Lab to Reality – Already Done</h3>
+                <p class="why-us__card-text">Proven technology that sells: engineered, validated, and ready to scale.</p>
+            </article>
+            <article class="why-us__card">
+                <div class="why-us__card-icon">🤝</div>
+                <h3 class="why-us__card-title">Close to Our Customers</h3>
+                <p class="why-us__card-text">We work with real customers and partners, enabling fast applications.</p>
+            </article>
+            <article class="why-us__card">
+                <div class="why-us__card-icon">🏭</div>
+                <h3 class="why-us__card-title">Born by SCHUNK – Trusted Worldwide</h3>
+                <p class="why-us__card-text">Backed by a globally known, 80-year-old industrial brand.</p>
+            </article>
+            <article class="why-us__card">
+                <div class="why-us__card-icon">⚙️</div>
+                <h3 class="why-us__card-title">Manufacturing Infrastructure from Day One</h3>
+                <p class="why-us__card-text">Manufacturing depth, real test environments, and global CoLabs.</p>
+            </article>
+            <article class="why-us__card">
+                <div class="why-us__card-icon">🌍</div>
+                <h3 class="why-us__card-title">15+ Robotic Gyms Worldwide</h3>
+                <p class="why-us__card-text">Train our hand applications in over 15 CoLabs worldwide.</p>
+            </article>
+            <article class="why-us__card">
+                <div class="why-us__card-icon">🎯</div>
+                <h3 class="why-us__card-title">10+ Years of Expertise</h3>
+                <p class="why-us__card-text">Hands-on expertise in developing advanced humanoid robotic hands.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section class="section section--dark" id="tech-stack">
+    <div class="container">
+        <header class="section__header">
+            <span class="section__label">Technology</span>
+            <h2 class="section__title">Our Tech Stack</h2>
+            <p class="section__subtitle">A modular hand platform designed for application-specific configuration</p>
+        </header>
+
+        <div class="tech-stack__grid">
+            <article class="hand-card">
+                <div class="hand-card__image">
+                    <img src="assets/sdh.png" alt="SDH Dexterous Hand">
+                </div>
+                <div class="hand-card__content">
+                    <span class="hand-card__badge">Modularization</span>
+                    <h3 class="hand-card__title">SDH</h3>
+                    <p class="hand-card__subtitle">Dexterous Hand</p>
+                    <ul class="hand-card__specs">
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Fingers</span>
+                            <span class="hand-card__spec-value">3-finger grasping</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">DOF</span>
+                            <span class="hand-card__spec-value">7 degrees of freedom</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Actuators</span>
+                            <span class="hand-card__spec-value">3 integrated</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Drive</span>
+                            <span class="hand-card__spec-value">Servo-electric</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="hand-card">
+                <div class="hand-card__image">
+                    <img src="assets/shv.jpg" alt="SVH Dexterous Hand">
+                </div>
+                <div class="hand-card__content">
+                    <span class="hand-card__badge">Dexterity</span>
+                    <h3 class="hand-card__title">SVH</h3>
+                    <p class="hand-card__subtitle">Dexterous Hand</p>
+                    <ul class="hand-card__specs">
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Fingers</span>
+                            <span class="hand-card__spec-value">5-finger grasping</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">DOF</span>
+                            <span class="hand-card__spec-value">20 degrees of freedom</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Actuators</span>
+                            <span class="hand-card__spec-value">9 integrated</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Drive</span>
+                            <span class="hand-card__spec-value">Spindle drive</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="hand-card">
+                <div class="hand-card__image">
+                    <img src="assets/sih.png" alt="SIH Power Hand">
+                </div>
+                <div class="hand-card__content">
+                    <span class="hand-card__badge">Tendon Drive</span>
+                    <h3 class="hand-card__title">SIH</h3>
+                    <p class="hand-card__subtitle">Power Hand</p>
+                    <ul class="hand-card__specs">
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Type</span>
+                            <span class="hand-card__spec-value">Remote direct drive</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">DOF</span>
+                            <span class="hand-card__spec-value">11 degrees of freedom</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Actuators</span>
+                            <span class="hand-card__spec-value">5 integrated</span>
+                        </li>
+                        <li class="hand-card__spec">
+                            <span class="hand-card__spec-label">Drive</span>
+                            <span class="hand-card__spec-value">Tendon-based</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <div class="antro-banner">
+            <div class="antro-banner__image">
+                <img src="assets/antro_hand.png" alt="Next-Generation Anthropomorphic Hand">
+            </div>
+            <div class="antro-banner__content">
+                <h3>Next-Generation Anthropomorphic Hand</h3>
+                <p>A modular hand platform designed for application-specific configuration. Combining the dexterity of human hands with the precision and reliability of industrial robotics.</p>
+                <a href="#contact" class="btn btn--primary">Request Demo</a>
+            </div>
+        </div>
+
+        <div class="simulation-banner">
+            <div class="simulation-banner__content">
+                <h3 class="simulation-banner__title">AI-Driven Simulation</h3>
+                <p class="simulation-banner__text">Training our hand applications in industrial metaverses with state-of-the-art simulation technology.</p>
+                <div class="simulation-banner__logos">
+                    <span class="simulation-banner__logo">NVIDIA Omniverse</span>
+                    <span class="simulation-banner__logo">MuJoCo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Robotic Gyms Section -->
+<section class="section section--darker" id="gyms">
+    <div class="container">
+        <div class="gyms__content">
+            <div class="gyms__text">
+                <h3><span>15</span> Robotic Gyms Worldwide</h3>
+                <p>
+                    Where anthropomorphic hands are trained, stress-tested, and validated together with customers in real industrial applications.
+                </p>
+                <ul class="gyms__features">
+                    <li class="gyms__feature">
+                        <span class="gyms__feature-icon">✓</span>
+                        <span class="gyms__feature-text">Real customer environments, not controlled labs</span>
+                    </li>
+                    <li class="gyms__feature">
+                        <span class="gyms__feature-icon">✓</span>
+                        <span class="gyms__feature-text">Continuous data generation for model improvement</span>
+                    </li>
+                    <li class="gyms__feature">
+                        <span class="gyms__feature-icon">✓</span>
+                        <span class="gyms__feature-text">Global coverage across 4 continents</span>
+                    </li>
+                    <li class="gyms__feature">
+                        <span class="gyms__feature-icon">✓</span>
+                        <span class="gyms__feature-text">Application-specific training and validation</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="gyms__image">
+                <img src="assets/lab.png" alt="Robotic Gym Facility">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recruiting Section -->
+<section class="section section--dark" id="careers">
+    <div class="container">
+        <header class="section__header">
+            <span class="section__label">Careers</span>
+            <h2 class="section__title">Join the Physical AI Revolution</h2>
+            <p class="section__subtitle">We're not hiring employees. We're assembling founders.</p>
+        </header>
+
+        <div class="recruiting__intro">
+            <p>
+                Every day, industries lose billions to tasks that humans shouldn't do – repetitive, dangerous, inefficient. Traditional automation can't solve this.
+            </p>
+            <p>
+                We're building the solution: humanoid hands powered by Physical AI that learn, adapt, and scale across every industry on the planet.
+            </p>
+            <p><strong>And we need the people who will define it.</strong></p>
+        </div>
+
+        <div class="why-shr">
+            <article class="why-shr-card">
+                <div class="why-shr-card__icon">🚀</div>
+                <h3 class="why-shr-card__title">Day-One Impact</h3>
+                <p class="why-shr-card__text">No 6-month onboarding. No bureaucracy. You'll ship code or design hardware in your first week.</p>
+            </article>
+            <article class="why-shr-card">
+                <div class="why-shr-card__icon">🏭</div>
+                <h3 class="why-shr-card__title">Real Infrastructure</h3>
+                <p class="why-shr-card__text">Backed by SCHUNK's 80 years of manufacturing. You build it, we can produce it at scale.</p>
+            </article>
+            <article class="why-shr-card">
+                <div class="why-shr-card__icon">🌍</div>
+                <h3 class="why-shr-card__title">Global Deployment</h3>
+                <p class="why-shr-card__text">Your work deploys in real customer environments across 4 continents.</p>
+            </article>
+            <article class="why-shr-card">
+                <div class="why-shr-card__icon">🧠</div>
+                <h3 class="why-shr-card__title">Physical AI at the Core</h3>
+                <p class="why-shr-card__text">Sim-to-real transfer, reinforcement learning – if it's cutting-edge, we're building it.</p>
+            </article>
+        </div>
+
+        <div class="roles__header">
+            <h3>Open Positions</h3>
+            <p>Founding team roles in Munich and remote</p>
+        </div>
+
+        <div class="roles__categories">
+            <div class="role-category">
+                <div class="role-category__header">
+                    <div class="role-category__icon">⚡</div>
+                    <h4 class="role-category__title">Engineering & AI</h4>
+                </div>
+                <div class="roles-list">
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">AI/ML Research Engineer</h5>
+                            <div class="role__tags">
+                                <span class="role__tag">Munich</span>
+                                <span class="role__tag role__tag--remote">Remote OK</span>
+                            </div>
+                        </div>
+                        <p class="role__impact">"Train our hands to master 10,000+ manipulation tasks through reinforcement learning and sim-to-real transfer."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">RL frameworks (Isaac Gym, MuJoCo)</span>
+                            <span class="role__req">PyTorch/JAX</span>
+                        </div>
+                    </article>
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Robotics Software Engineer</h5>
+                            <div class="role__tags">
+                                <span class="role__tag">Munich</span>
+                                <span class="role__tag role__tag--remote">Remote OK</span>
+                            </div>
+                        </div>
+                        <p class="role__impact">"Build the software stack that runs on hands deployed across 15 countries."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">C++, Python</span>
+                            <span class="role__req">ROS2</span>
+                            <span class="role__req">Real-time systems</span>
+                        </div>
+                    </article>
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Mechatronics Engineer</h5>
+                            <div class="role__tags"><span class="role__tag">Munich</span></div>
+                        </div>
+                        <p class="role__impact">"Design the next-generation anthropomorphic hand – more dexterous, more robust, more intelligent."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">Actuator design</span>
+                            <span class="role__req">Tendon-driven systems</span>
+                        </div>
+                    </article>
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Embedded Systems Engineer</h5>
+                            <div class="role__tags"><span class="role__tag">Munich</span></div>
+                        </div>
+                        <p class="role__impact">"Develop the firmware and control systems that make Physical AI run on real hardware."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">Embedded C/C++</span>
+                            <span class="role__req">RTOS</span>
+                            <span class="role__req">Motor control</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="role-category">
+                <div class="role-category__header">
+                    <div class="role-category__icon">🎨</div>
+                    <h4 class="role-category__title">Product & Design</h4>
+                </div>
+                <div class="roles-list">
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Product Manager – Industrial Applications</h5>
+                            <div class="role__tags">
+                                <span class="role__tag">Munich</span>
+                                <span class="role__tag role__tag--remote">Remote OK</span>
+                            </div>
+                        </div>
+                        <p class="role__impact">"Define the use cases that will automate entire industries."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">Technical background</span>
+                            <span class="role__req">B2B hardware experience</span>
+                        </div>
+                    </article>
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Industrial Designer</h5>
+                            <div class="role__tags"><span class="role__tag">Munich</span></div>
+                        </div>
+                        <p class="role__impact">"Shape the physical form of humanoid manipulation."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">Robotic products</span>
+                            <span class="role__req">CAD, 3D printing</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="role-category">
+                <div class="role-category__header">
+                    <div class="role-category__icon">👔</div>
+                    <h4 class="role-category__title">Leadership & Operations</h4>
+                </div>
+                <div class="roles-list">
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Chief Executive Officer (CEO)</h5>
+                            <div class="role__tags"><span class="role__tag">Munich</span></div>
+                        </div>
+                        <p class="role__impact">"Lead SHR from startup to category-defining company."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">Deep-tech scaling</span>
+                            <span class="role__req">Series A+ fundraising</span>
+                        </div>
+                    </article>
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Chief Technology Officer (CTO)</h5>
+                            <div class="role__tags"><span class="role__tag">Munich</span></div>
+                        </div>
+                        <p class="role__impact">"Own the technical roadmap from Physical AI research to global deployment."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">Robotics + ML expertise</span>
+                            <span class="role__req">Team leadership (20+)</span>
+                        </div>
+                    </article>
+                    <article class="role">
+                        <div class="role__header">
+                            <h5 class="role__title">Business Development Lead</h5>
+                            <div class="role__tags">
+                                <span class="role__tag">Munich</span>
+                                <span class="role__tag role__tag--remote">Remote OK</span>
+                            </div>
+                        </div>
+                        <p class="role__impact">"Build partnerships with humanoid robot OEMs and enterprise customers."</p>
+                        <div class="role__requirements">
+                            <span class="role__req">Robotics network</span>
+                            <span class="role__req">Complex B2B sales</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="recruiting__offers">
+            <h3>What We Offer</h3>
+            <div class="offers-grid">
+                <div class="offer">
+                    <span class="offer__icon">📈</span>
+                    <div class="offer__text"><strong>Founding Equity</strong>Real ownership for founding team members</div>
+                </div>
+                <div class="offer">
+                    <span class="offer__icon">🏙️</span>
+                    <div class="offer__text"><strong>Munich HQ</strong>Heart of European robotics & automotive</div>
+                </div>
+                <div class="offer">
+                    <span class="offer__icon">🏠</span>
+                    <div class="offer__text"><strong>Remote Flexibility</strong>For roles where it makes sense</div>
+                </div>
+                <div class="offer">
+                    <span class="offer__icon">🔧</span>
+                    <div class="offer__text"><strong>Hardware Budget</strong>Build, break, iterate</div>
+                </div>
+                <div class="offer">
+                    <span class="offer__icon">🌐</span>
+                    <div class="offer__text"><strong>Global Deployment</strong>See your work across continents</div>
+                </div>
+                <div class="offer">
+                    <span class="offer__icon">🏛️</span>
+                    <div class="offer__text"><strong>SCHUNK Backing</strong>Stability of 80 years, speed of a startup</div>
+                </div>
+            </div>
+        </div>
+
+        <blockquote class="recruiting__culture">
+            <p>
+                We're engineers who ship, researchers who build, and operators who obsess over execution. No politics. No endless meetings. No waiting for permission.
+                <br><br>
+                If you want to publish papers, join a university. If you want to change how the world works – literally – <strong>join us</strong>.
+            </p>
+        </blockquote>
+
+        <div class="recruiting__team">
+            <div class="recruiting__team-image">
+                <img src="assets/join.png" alt="Timo Gessmann - CTO SCHUNK">
+            </div>
+            <p class="recruiting__team-caption">Timo Gessmann, CTO of SCHUNK SE & Co. KG</p>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq__title">Frequently Asked Questions</h3>
+            <div class="faq__grid">
+                <article class="faq__item">
+                    <h4 class="faq__question">Do I need a PhD?</h4>
+                    <p class="faq__answer">No. We care about what you've built, not your credentials. Show us your projects, your code, your impact.</p>
+                </article>
+                <article class="faq__item">
+                    <h4 class="faq__question">Is remote work possible?</h4>
+                    <p class="faq__answer">For software and AI roles, yes. Hardware roles require Munich presence for prototyping and testing.</p>
+                </article>
+                <article class="faq__item">
+                    <h4 class="faq__question">What's the interview process?</h4>
+                    <p class="faq__answer">1. Application review (48h) → 2. Technical conversation (60 min) → 3. On-site deep-dive → 4. Founder chat + offer</p>
+                </article>
+                <article class="faq__item">
+                    <h4 class="faq__question">When do you start?</h4>
+                    <p class="faq__answer">Now. We're actively hiring and moving fast. The best time to join is before everyone realizes it's the next big thing.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="recruiting__cta">
+            <div class="recruiting__cta-content">
+                <h3>Ready to Build the Future?</h3>
+                <p>We're assembling a founding team in Munich and beyond. Entrepreneurs, engineers, operators – ready from day one.</p>
+                <a href="mailto:careers@shr-robotics.eu?subject=Application%20-%20SHR%20Robotics" class="btn btn--white btn--large">
+                    Apply Now
+                    <svg class="btn__icon" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <p class="recruiting__cta-email">Or email us directly: <a href="mailto:careers@shr-robotics.eu">careers@shr-robotics.eu</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section section--darker" id="contact">
+    <div class="container">
+        <div class="contact__content">
+            <div class="contact__text">
+                <h3>Let's Get in Touch</h3>
+                <p>Whether you're interested in our technology, exploring partnership opportunities, or ready to join our team – we'd love to hear from you.</p>
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <span class="contact__info-icon">📧</span>
+                        <span>info@shr-robotics.eu</span>
+                    </li>
+                    <li class="contact__info-item">
+                        <span class="contact__info-icon">📍</span>
+                        <span>Munich, Germany</span>
+                    </li>
+                    <li class="contact__info-item">
+                        <span class="contact__info-icon">🏢</span>
+                        <span>Backed by SCHUNK SE & Co. KG</span>
+                    </li>
+                </ul>
+            </div>
+            <form class="contact__form" action="#" method="POST">
+                <div class="contact__form-group">
+                    <label class="contact__form-label" for="name">Name</label>
+                    <input class="contact__form-input" type="text" id="name" name="name" required>
+                </div>
+                <div class="contact__form-group">
+                    <label class="contact__form-label" for="email">Email</label>
+                    <input class="contact__form-input" type="email" id="email" name="email" required>
+                </div>
+                <div class="contact__form-group">
+                    <label class="contact__form-label" for="subject">Subject</label>
+                    <input class="contact__form-input" type="text" id="subject" name="subject" required>
+                </div>
+                <div class="contact__form-group">
+                    <label class="contact__form-label" for="message">Message</label>
+                    <textarea class="contact__form-textarea" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <a href="#" class="nav__logo">
+                    <div class="nav__logo-icon">
+                        <img src="assets/hand.svg" alt="SHR Robotics">
+                    </div>
+                    <span>SHR Robotics</span>
+                </a>
+                <p>Building the next generation of humanoid robotic hands powered by Physical AI.</p>
+            </div>
+            <div class="footer__column">
+                <h4>Company</h4>
+                <ul class="footer__links">
+                    <li class="footer__link"><a href="#vision">Vision</a></li>
+                    <li class="footer__link"><a href="#why-us">Why Us</a></li>
+                    <li class="footer__link"><a href="#careers">Careers</a></li>
+                    <li class="footer__link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4>Technology</h4>
+                <ul class="footer__links">
+                    <li class="footer__link"><a href="#physical-ai">Physical AI</a></li>
+                    <li class="footer__link"><a href="#tech-stack">Tech Stack</a></li>
+                    <li class="footer__link"><a href="#gyms">Robotic Gyms</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4>Connect</h4>
+                <ul class="footer__links">
+                    <li class="footer__link"><a href="https://linkedin.com/company/shr-robotics" target="_blank">LinkedIn</a></li>
+                    <li class="footer__link"><a href="https://twitter.com/shrrobotics" target="_blank">Twitter</a></li>
+                    <li class="footer__link"><a href="mailto:info@shr-robotics.eu">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2024 SHR Robotics. All rights reserved.</p>
+            <div class="footer__legal">
+                <a href="#">Imprint</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer__backed">
+                Supported by
+                <a href="https://schunk.com" target="_blank">
+                    <img src="assets/schunk.svg" alt="SCHUNK">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Navbar scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('nav--scrolled', window.scrollY > 50);
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                if (document.body.classList.contains('nav-open')) {
+                    document.body.classList.remove('nav-open');
+                }
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Form handling
+    const form = document.querySelector('.contact__form');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+        });
+    }
+
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.01 });
+
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+    });
+
+    document.querySelector('.hero').style.opacity = '1';
+    document.querySelector('.hero').style.transform = 'translateY(0)';
+
+    // Mobile navigation
+    const navMenuButton = document.querySelector('.nav__menu-button');
+    navMenuButton.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+    });
+</script>
+
+</body>
+</html>
