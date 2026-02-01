@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | SHR Robotics</title>
+    <meta name="description" content="Impressum und rechtliche Informationen der SHR GmbH">
+    <link rel="icon" type="image/svg+xml" href="assets/hand.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #0066FF;
+            --color-secondary: #00D4AA;
+            --color-dark: #0A0F1C;
+            --color-dark-secondary: #111827;
+            --color-gray-600: #718096;
+            --color-gray-400: #CBD5E0;
+            --color-gray-300: #E2E8F0;
+            --color-white: #FFFFFF;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4AA 100%);
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--color-primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .nav {
+            padding: 20px 0;
+            background: rgba(10, 15, 28, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav__inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-white);
+            text-decoration: none;
+        }
+        .nav__logo-icon { width: 40px; height: 40px; }
+        .nav__logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+        .nav__back {
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid var(--color-gray-600);
+            border-radius: 8px;
+            color: var(--color-white);
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .nav__back:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+        .content__header {
+            margin-bottom: 60px;
+        }
+        .content__title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        .content__subtitle {
+            font-size: 18px;
+            color: var(--color-gray-600);
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+        .section__title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--color-white);
+        }
+        .section__content {
+            color: var(--color-gray-400);
+            font-size: 16px;
+        }
+        .section__content p {
+            margin-bottom: 16px;
+        }
+        .section__content strong {
+            color: var(--color-gray-300);
+        }
+
+        .info-block {
+            background: var(--color-dark-secondary);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .info-block__label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-gray-600);
+            margin-bottom: 8px;
+        }
+        .info-block__value {
+            font-size: 18px;
+            color: var(--color-white);
+            font-weight: 500;
+        }
+        .info-block__value a {
+            color: var(--color-primary);
+        }
+
+        .footer {
+            padding: 40px 0;
+            background: var(--color-dark);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+        .footer__text {
+            color: var(--color-gray-600);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+            <div class="nav__logo-icon">
+                <img src="assets/hand.svg" alt="SHR Robotics">
+            </div>
+            <span>SHR Robotics</span>
+        </a>
+        <a href="index.html" class="nav__back">Back to Home</a>
+    </div>
+</nav>
+
+<main class="content">
+    <header class="content__header">
+        <h1 class="content__title">Impressum</h1>
+        <p class="content__subtitle">Legal Notice / Rechtliche Angaben</p>
+    </header>
+
+    <section class="section">
+        <h2 class="section__title">Angaben gemäß § 5 TMG</h2>
+
+        <div class="info-block">
+            <div class="info-block__label">Firma</div>
+            <div class="info-block__value">SHR GmbH</div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__label">Anschrift</div>
+            <div class="info-block__value">
+                Bahnhofstr. 106-134<br>
+                D-74348 Lauffen/Neckar<br>
+                Deutschland
+            </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__label">Vertreten durch</div>
+            <div class="info-block__value">Timo Gessmann</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">Kontakt</h2>
+
+        <div class="info-block">
+            <div class="info-block__label">Telefon</div>
+            <div class="info-block__value">+49-7133-103-0</div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__label">Fax</div>
+            <div class="info-block__value">+49-7133-103-2399</div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__label">E-Mail</div>
+            <div class="info-block__value"><a href="mailto:info@shr-robotics.eu">info@shr-robotics.eu</a></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">Registereintrag</h2>
+
+        <div class="info-block">
+            <div class="info-block__label">Registergericht</div>
+            <div class="info-block__value">Amtsgericht München</div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__label">Registernummer</div>
+            <div class="info-block__value">HRB 308085</div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__label">Gerichtsstand</div>
+            <div class="info-block__value">74348 Lauffen am Neckar</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">Haftung für Inhalte</h2>
+        <div class="section__content">
+            <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+            <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">Haftung für Links</h2>
+        <div class="section__content">
+            <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+            <p>Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">Urheberrecht</h2>
+        <div class="section__content">
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+            <p>Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 SHR Robotics. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

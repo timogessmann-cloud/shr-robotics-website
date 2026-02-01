@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung | SHR Robotics</title>
+    <meta name="description" content="Datenschutzerklärung der SHR GmbH - Informationen zur Verarbeitung personenbezogener Daten">
+    <link rel="icon" type="image/svg+xml" href="assets/hand.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #0066FF;
+            --color-secondary: #00D4AA;
+            --color-dark: #0A0F1C;
+            --color-dark-secondary: #111827;
+            --color-gray-600: #718096;
+            --color-gray-400: #CBD5E0;
+            --color-gray-300: #E2E8F0;
+            --color-white: #FFFFFF;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4AA 100%);
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--color-primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .nav {
+            padding: 20px 0;
+            background: rgba(10, 15, 28, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav__inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-white);
+            text-decoration: none;
+        }
+        .nav__logo-icon { width: 40px; height: 40px; }
+        .nav__logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+        .nav__back {
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid var(--color-gray-600);
+            border-radius: 8px;
+            color: var(--color-white);
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .nav__back:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+        .content__header {
+            margin-bottom: 60px;
+        }
+        .content__title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        .content__subtitle {
+            font-size: 18px;
+            color: var(--color-gray-600);
+        }
+
+        .section {
+            margin-bottom: 48px;
+        }
+        .section__title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--color-white);
+        }
+        .section__content {
+            color: var(--color-gray-400);
+            font-size: 16px;
+        }
+        .section__content p {
+            margin-bottom: 16px;
+        }
+        .section__content strong {
+            color: var(--color-gray-300);
+        }
+        .section__content ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+        .section__content li {
+            margin-bottom: 8px;
+        }
+
+        .info-block {
+            background: var(--color-dark-secondary);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .info-block__label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-gray-600);
+            margin-bottom: 8px;
+        }
+        .info-block__value {
+            font-size: 18px;
+            color: var(--color-white);
+            font-weight: 500;
+        }
+        .info-block__value a {
+            color: var(--color-primary);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(0, 212, 170, 0.05) 100%);
+            border-left: 3px solid var(--color-primary);
+            border-radius: 0 12px 12px 0;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .highlight-box p {
+            margin: 0;
+            color: var(--color-gray-300);
+        }
+
+        .footer {
+            padding: 40px 0;
+            background: var(--color-dark);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+        .footer__text {
+            color: var(--color-gray-600);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+            <div class="nav__logo-icon">
+                <img src="assets/hand.svg" alt="SHR Robotics">
+            </div>
+            <span>SHR Robotics</span>
+        </a>
+        <a href="index.html" class="nav__back">Back to Home</a>
+    </div>
+</nav>
+
+<main class="content">
+    <header class="content__header">
+        <h1 class="content__title">Datenschutzerklärung</h1>
+        <p class="content__subtitle">Privacy Policy / Informationen zum Datenschutz</p>
+    </header>
+
+    <section class="section">
+        <h2 class="section__title">1. Verantwortliche Stelle</h2>
+
+        <div class="info-block">
+            <div class="info-block__label">Verantwortlicher im Sinne der DSGVO</div>
+            <div class="info-block__value">
+                SHR GmbH<br>
+                Bahnhofstr. 106-134<br>
+                D-74348 Lauffen/Neckar
+            </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__label">Datenschutzbeauftragter</div>
+            <div class="info-block__value"><a href="mailto:info@shr-robotics.eu">info@shr-robotics.eu</a></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">2. Erhebung und Speicherung personenbezogener Daten</h2>
+        <div class="section__content">
+            <p><strong>a) Beim Besuch der Website</strong></p>
+            <p>Beim Aufrufen unserer Website werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sog. Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:</p>
+            <ul>
+                <li>IP-Adresse des anfragenden Rechners (anonymisiert)</li>
+                <li>Datum und Uhrzeit des Zugriffs</li>
+                <li>Name und URL der abgerufenen Datei</li>
+                <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
+                <li>Verwendeter Browser und ggf. das Betriebssystem Ihres Rechners</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Hinweis:</strong> IP-Adressen werden umgehend gelöscht oder gekürzt (anonymisiert), um Ihre Privatsphäre zu schützen.</p>
+            </div>
+
+            <p><strong>b) Bei Nutzung weiterer Dienste</strong></p>
+            <p>Sofern Sie weitere Dienste auf unserer Website nutzen (z.B. Kontaktformular, Bewerbung), verarbeiten wir die von Ihnen angegebenen Daten ausschließlich zur Erbringung des gewünschten Dienstes. Bei Bewerbungen werden Ihre Daten gegebenenfalls an die SCHUNK SE & Co. KG weitergeleitet.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">3. Cookies</h2>
+        <div class="section__content">
+            <p>Wir setzen auf unserer Seite Cookies ein. Hierbei handelt es sich um kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät gespeichert werden. Cookies richten auf Ihrem Endgerät keinen Schaden an, enthalten keine Viren, Trojaner oder sonstige Schadsoftware.</p>
+            <p>In dem Cookie werden Informationen abgelegt, die sich jeweils im Zusammenhang mit dem spezifisch eingesetzten Endgerät ergeben. Dies bedeutet jedoch nicht, dass wir dadurch unmittelbar Kenntnis von Ihrer Identität erhalten.</p>
+            <p>Die meisten Browser akzeptieren Cookies automatisch. Sie können Ihren Browser jedoch so konfigurieren, dass keine Cookies auf Ihrem Computer gespeichert werden oder stets ein Hinweis erscheint, bevor ein neuer Cookie angelegt wird. Die vollständige Deaktivierung von Cookies kann jedoch dazu führen, dass Sie nicht alle Funktionen unserer Website nutzen können.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">4. Analyse-Tools</h2>
+        <div class="section__content">
+            <p><strong>a) Google Analytics</strong></p>
+            <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen.</p>
+            <p>Wir haben die IP-Anonymisierung aktiviert. Dadurch wird Ihre IP-Adresse von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übermittlung in die USA gekürzt.</p>
+
+            <div class="highlight-box">
+                <p><strong>Opt-Out:</strong> Sie können die Erfassung durch Google Analytics verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-Out</a></p>
+            </div>
+
+            <p><strong>b) Google Tag Manager</strong></p>
+            <p>Diese Website verwendet den Google Tag Manager. Der Tag Manager selbst (der die Tags implementiert) ist eine cookielose Domain und erfasst keine personenbezogenen Daten.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">5. Datensicherheit</h2>
+        <div class="section__content">
+            <p>Alle Daten werden auf EU-Servern gespeichert. Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird.</p>
+            <p>Wir bedienen uns geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">6. Ihre Rechte</h2>
+        <div class="section__content">
+            <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
+            <ul>
+                <li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO)</li>
+                <li><strong>Recht auf Bestätigung</strong> der Verarbeitung</li>
+                <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li>
+                <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li>
+                <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+                <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+                <li><strong>Recht auf Widerspruch</strong> (Art. 21 DSGVO)</li>
+                <li><strong>Recht auf Widerruf</strong> erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
+                <li><strong>Recht auf Beschwerde</strong> bei einer Aufsichtsbehörde (Art. 77 DSGVO)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">7. Speicherdauer</h2>
+        <div class="section__content">
+            <p>Wir speichern personenbezogene Daten nur so lange, wie es für die Erfüllung des jeweiligen Zwecks erforderlich ist oder wie es die gesetzlichen Aufbewahrungsfristen vorsehen. Nach Ablauf dieser Fristen werden die entsprechenden Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gelöscht.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">8. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+        <div class="section__content">
+            <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Januar 2024.</p>
+            <p>Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website von Ihnen abgerufen und ausgedruckt werden.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">Kontakt</h2>
+        <div class="section__content">
+            <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskünften, Berichtigung, Sperrung oder Löschung von Daten sowie Widerruf erteilter Einwilligungen wenden Sie sich bitte an:</p>
+        </div>
+        <div class="info-block">
+            <div class="info-block__value">
+                SHR GmbH<br>
+                Bahnhofstr. 106-134<br>
+                D-74348 Lauffen/Neckar<br><br>
+                E-Mail: <a href="mailto:info@shr-robotics.eu">info@shr-robotics.eu</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 SHR Robotics. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
